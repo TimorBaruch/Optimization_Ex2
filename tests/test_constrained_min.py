@@ -26,7 +26,7 @@ def test_optimization(problem_type, objective_function, inequality_constraints, 
         print(f"Equality constraints values at the final candidate: {equality_values}")
 
     # Plot objective values and optimization path
-    if (problem_type == 'LP'):
+    if problem_type == 'LP':
         plot_path_lp(hist_dict['path'])
     else:
         plot_path_qp(hist_dict['path'])

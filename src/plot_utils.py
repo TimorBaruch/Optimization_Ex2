@@ -7,7 +7,7 @@ def plot_objective_values(values, problem_type):
     x = np.arange(len(values))
 
     ax.plot(x, values, marker='o', linestyle='-', color='b', markersize=7, linewidth=2)
-    ax.set_title(f'objective Value vs. Outer Iteration Number ({problem_type})', fontsize=14)
+    ax.set_title(f'Objective Value vs. Outer Iteration Number for {problem_type}', fontsize=14)
     ax.set_xlabel('#Iteration', fontsize=12)
     ax.set_ylabel('Objective Value', fontsize=12)
     ax.grid(True)
@@ -18,7 +18,7 @@ def plot_objective_values(values, problem_type):
 
 
 def plot_path_qp(path, plane_color='gray', path_color='brown', final_color='purple'):
-    fig = plt.figure(figsize=(8, 6))  # Adjust figure size as needed
+    fig = plt.figure(figsize=(8, 6))
     ax = fig.add_subplot(111, projection='3d')
     path = np.array(path)
 
